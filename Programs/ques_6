@@ -1,0 +1,15 @@
+n = int(input("Enter a number: "))
+
+
+def binary_conv(n):
+    a = []
+    while n > 0:
+        hold = int(n % 2)
+        a.append(str(hold))
+        n = int(n / 2)
+    a.reverse()
+    str1 = ''.join(a)
+    print(str1)
+
+
+binary_conv(n)

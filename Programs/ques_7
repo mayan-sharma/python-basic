@@ -1,0 +1,10 @@
+str1 = input("Type something:")
+a = str1.split()
+l = len(a)
+
+for x in range(int(l/2)):
+    str2 = a[x]
+    a[x] = a[l-1-x]
+    a[l-1-x] = str2
+
+print(" ".join(a))

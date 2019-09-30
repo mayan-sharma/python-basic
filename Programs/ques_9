@@ -1,0 +1,9 @@
+import math
+
+class Circle(object):
+
+    def __init__(self,r):
+        self.r = r
+
+    def calarea(self):
+        return math.pi * self.r * self.r

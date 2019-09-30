@@ -1,0 +1,14 @@
+str1 = input("Enter something:")
+a = str1.split()
+a.sort()
+output_dict = {}
+for i in a:
+    freq = 0
+    for x in a:
+        if i == x:
+            freq += 1
+    output_dict[i] = freq
+
+
+for key in output_dict:
+    print(key, ":", output_dict[key])
