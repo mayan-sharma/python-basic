@@ -1,0 +1,12 @@
+class str_Methods(object):
+    str1 = ""
+    def getstring(self):
+        self.str1 = input("Type something:")
+
+    def printstring(self):
+        print(self.str1.upper())
+
+
+obj = str_Methods()
+obj.getstring()
+obj.printstring()
